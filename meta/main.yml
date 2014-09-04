@@ -1,0 +1,16 @@
+---
+galaxy_info:
+  author: Jonathan Underwood
+  description: "Installs mapcrafter, a minecraft map rendering tool."
+  license: MIT
+  min_ansible_version: 1.4
+  platforms:
+  - name: Ubuntu
+   versions:
+   - all
+  - name: Debian
+   versions:
+   - all
+  categories:
+  - packaging
+dependencies: []

@@ -1,0 +1,9 @@
+---
+- name: "add mapcrafter signing key"
+  apt_key: data="{{ lookup('file', 'mapcrafter.gpg') }}" state=present
+
+- name: "add mapcrafter repo"
+  apt_repository: repo="deb http://mapcrafter.org/debian ./" state=present
+
+- name: "install mapcrafter"
+  apt: pkg=mapcrafter update_cache=yes state=latest
